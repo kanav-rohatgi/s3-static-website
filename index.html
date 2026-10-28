@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My AWS Deployed Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My First CI/CD Website</h1>
+      <p>This website is hosted on Amazon S3.</p>
+      <p>Deployed automatically using AWS CodePipeline!</p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message"></p>
+    </div>
+
+    <script>
+      function showMessage() {
+        document.getElementById("message").textContent =
+          "CI/CD deployment is working!";
+      }
+    </script>
+  </body>
+</html>
